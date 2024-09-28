@@ -1,48 +1,105 @@
-// let array = [
-//     [1, 2, 4], 
-//     [5, 10, 15],
-//     [1], 
-//     [20, 6, 8], 
-//     [1, 0, 5, 7, 3, 6,]
+// // let array = [
+// //     [1, 2, 4], 
+// //     [5, 10, 15],
+// //     [1], 
+// //     [20, 6, 8], 
+// //     [1, 0, 5, 7, 3, 6,]
+// // ];
+
+
+// // for (let i = 0; i < array.length; i++) {
+    
+// //     for (let j = 0; j < array[i].length; j++) {
+
+// //         console.log(array[i][j]);
+// //     }
+
+// // }
+
+
+// let array1 = [
+//     [5,6,8],
+//     [1,9,0],
+//     [11,3,4]
+// ]
+
+// let array2 = [
+//     [2,9,8],
+//     [1,6,0],
+//     [12,7,5]
+// ]
+// let array3 = [
+//     [],
+//     [],
+//     []
 // ];
 
-
-// for (let i = 0; i < array.length; i++) {
-    
-//     for (let j = 0; j < array[i].length; j++) {
-
-//         console.log(array[i][j]);
+// for(let i = 0; i < 3 ; i++){
+//     for (let j = 0; j < 3; j++) {
+//       console.log(array1[i][j]+array2[i][j]);
+// array3[i].push(array1[i][j]+array2[i][j]);
+         
 //     }
-
 // }
+// console.log(array3);
 
 
-let array1 = [
-    [5,6,8],
-    [1,9,0],
-    [11,3,4]
-]
 
-let array2 = [
-    [2,9,8],
-    [1,6,0],
-    [12,7,5]
-]
-let array3 = [
-    [],
-    [],
-    []
-]
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
 
-      let a  = array1[i][j]+array2[i][j]
-      console.log(a);
-        array3[i].push(array1[i][j]+array2[i][j])        
-    }
-     
+
+const average = (array)=>{
+let aveSum = 0;
+for (let i = 0; i < array.length; i++) {
+   
+aveSum = aveSum + array[i]
+console.log(aveSum);
+   
 }
-console.log(array3);
+   return aveSum / array.length
+}
+console.log("Average=>",average([1,2,3,4,5,6,7,8,9]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) {
+
+//       let a  = array1[i][j]+array2[i][j]
+//       console.log(a);
+//         array3[i].push(array1[i][j]+array2[i][j])        
+//     }
+     
+// }
+// console.log(array3);
 
 
 
